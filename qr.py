@@ -1,5 +1,5 @@
 import qrcode
-from PIL import Image
+from PIL import Image 
 
 def create_qr_code(name, certificate_url):
     qr = qrcode.QRCode(  
@@ -17,7 +17,6 @@ def create_qr_code(name, certificate_url):
     print(f"QR code for {name} generated successfully.")
 
 if __name__ == "__main__":
-    name = input("Enter the name of the student: ")
-    certificate_url = input("Enter the URL of the certificate: ")
-
-    create_qr_code(name, certificate_url)
+    name = input("name is : ")
+    data = input("data is : ")
+    create_qr_code(name, data)
